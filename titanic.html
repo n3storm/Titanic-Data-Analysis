@@ -12508,11 +12508,7 @@ dtype: int64</pre>
 <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
 
 <span class="n">survivors_per_class_df</span> <span class="o">=</span> <span class="n">passengers_per_class_gb</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="c1">#survivors_per_class_gb.sum().plot(kind=&#39;hist&#39;)</span>
-<span class="c1">#plt.plot(survivors_per_class_gb.sum())</span>
-
 <span class="n">classes_ls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;First Class&#39;</span><span class="p">,</span><span class="s1">&#39;Second Class&#39;</span><span class="p">,</span><span class="s1">&#39;Third Class&#39;</span><span class="p">]</span>
-<span class="c1">#matplotlib.rcParams[&#39;figure.figsize&#39;] = &#39;18.0, 16.0&#39;</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">})</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">survivors_per_class_df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">survivors_per_class_df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">],</span>
@@ -12522,13 +12518,7 @@ dtype: int64</pre>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Total Survivors per Class&#39;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">survivors_per_class_df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="o">.</span><span class="mi">9</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-<span class="c1">#plt.subplots_adjust(left=0, bottom=0, right=1.5, top=1, wspace=0, hspace=0)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">right</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=-.</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="c1">#plt.bar(y_pos, performance, align=&#39;center&#39;, alpha=0.5)</span>
-<span class="c1">#plt.yticks(y_pos, objects)</span>
-<span class="c1">#plt.xlabel(&#39;Usage&#39;)</span>
-<span class="c1">#plt.title(&#39;Programming language usage&#39;)</span>
 </pre></div>
 
 </div>
