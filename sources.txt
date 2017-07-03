@@ -1,0 +1,13 @@
+The following sources were used while creating this project:
+
+*******************************************************************************************************
+
+https://pandas.pydata.org/pandas-docs/stable/index.html
+
+https://matplotlib.org/contents.html
+
+https://stackoverflow.com/questions/14657241/how-do-i-get-a-list-of-all-the-duplicate-items-using-pandas-in-python
+
+https://stackoverflow.com/questions/30228069/how-to-display-the-value-of-the-bar-on-each-bar-with-pyplot-barh
+
+https://stackoverflow.com/questions/37799865/valueerror-num-must-be-1-num-2-not-3
